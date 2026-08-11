@@ -1,27 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>My Website</title>
- <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Layout & Typography */
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #222;
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        nav a:hover {
+            color: #007bff;
+        }
+
+        /* Sections */
+        section {
+            padding: 60px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        h1, h2 {
+            margin-bottom: 20px;
+            color: #222;
+        }
+
+        /* Hero / Home Section */
+        #home {
+            text-align: center;
+            padding: 100px 20px;
+            background-color: #fff;
+        }
+
+        #home h1 {
+            font-size: 2.5rem;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #222;
+            color: white;
+        }
+    </style>
 </head>
 <body>
- <header>
-   <nav>
-     <a href="#home">Home</a>
-     <a href="#about">About</a>
-     <a href="#contact">Contact</a>
-     <a href="#projects">Projects</a>
-   </nav>
- </header>
- <section id="home">
-   <h1>Welcome</h1>
-   <p>Alexandros Ntoouz</p>
- </section>
- <footer>
-   <p>Data Scientist</p>
- </footer>
- <script src="script.js"></script>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <div class="container">
+            <h1>Hi, I'm [Your Name]</h1>
+            <p>I am a [Your Profession/Student] passionate about building great things.</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Welcome to my digital space! I specialize in [your skills]. When I'm not working on [your projects], you can find me [your hobbies]. I believe in continuous learning and creating impactful work.</p>
+        </div>
+    </section>
+
+    <section id="work">
+        <div class="container">
+            <h2>Selected Work</h2>
+            <p>Here are a few of my recent projects:</p>
+            <br>
+            <p><strong>Project One:</strong> A brief description of what you built and the tools you used.</p>
+            <p><strong>Project Two:</strong> Another cool project you are proud of.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>I'm always open to new opportunities and collaborations.</p>
+            <p>Email me at: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+            <p>Find me on <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a> or <a href="https://github.com/yourhandle" target="_blank">GitHub</a>.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 [Your Name]. Built with custom code.</p>
+    </footer>
+
 </body>
 </html>
