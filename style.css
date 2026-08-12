@@ -3,26 +3,25 @@ body {
  margin: 0;
 }
 nav {
- background: #333;
- padding: 10px;
- text-align: center;
- text-transform: uppercase;
+    background: #333;
+    padding: 15px 20px; /* Slightly thicker padding looks better on full-width navs */
+    text-transform: uppercase;
+    /* Removed text-align: center because Flexbox will handle the alignment now */
 }
 
 .inline-list {
-     display: inline-block;
-
-}
-.inline-list li {
-    display: inline-block;   /* Places items side-by-side */
-    margin-right: 20px;      /* Adds space to the right of each item */
+    display: flex;                      /* Turns on Flexbox */
+    justify-content: space-evenly;      /* Spreads the items evenly across the full width */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;                        /* Ensures the list stretches across the whole nav */
 }
 
 nav a {
- color: white;
- margin: 0 10px;
- text-decoration: none;
- padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    padding: 10px; 
 }
 section {
  padding: 20px;
