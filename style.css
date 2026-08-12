@@ -13,8 +13,8 @@ nav {
     display: flex;                      /* Turns on Flexbox */
     justify-content: space-evenly;      /* Spreads the items evenly across the full width */
     list-style: none;
-    margin: 0;
-    padding: 0;
+    margin: 20px 5px;                          /* Adds some vertical margin for spacing */
+    padding: 10px 0;                       /* Adds some vertical padding for better clickability */
     width: 100%;                        /* Ensures the list stretches across the whole nav */
 }
 
