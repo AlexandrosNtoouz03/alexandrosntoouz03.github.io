@@ -1,58 +1,45 @@
 body {
- font-family: Arial, sans-serif;
- margin: 0;
-}
-
-/* 1. Main Navigation Container */
-.navbar {
-    display: flex;
-    align-items: center;         /* Vertically centers the logo and the text */
-    justify-content: flex-start; /* Aligns all items to the left side */
-    background-color: #121212;   /* The dark background color */
-    padding: 15px 30px;          /* Adds space around the edges of the nav bar */
     font-family: Arial, sans-serif;
+    margin: 0;
 }
 
-/* 2. Logo Spacing */
-.logo-container {
-    margin-right: 40px;          /* Creates the larger gap between the logo and "Home" */
+/* Styles the main navigation bar container */
+nav {
+    background-color: #121212;
+    padding: 15px 30px;
+}
+
+/* Turns your list into a horizontal flex container */
+nav ul {
     display: flex;
-    align-items: center;
-}
-
-.logo {
-    height: 35px;                /* Adjust this value based on your actual logo size */
-    display: block;
-}
-
-/* 3. Link List Container */
-.nav-links {
-    display: flex;
-    gap: 30px;                   /* Creates the even spacing between Home, Feed, and Library */
+    gap: 30px;
     list-style: none;
     margin: 0;
     padding: 0;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-/* 4. Text Link Styling */
-.nav-links a {
-    color: #b3b3b3;              /* The muted light grey text color */
+/* Styles the text links */
+nav a {
+    color: #b3b3b3;
     text-decoration: none;
     font-size: 16px;
-    font-weight: 700;            /* Makes the font thick/bold */
+    font-weight: 700;
 }
 
-/* Optional: Add a hover effect so the text turns bright white when hovered */
-.nav-links a:hover {
+/* Hover effect for the text links */
+nav a:hover {
     color: #ffffff;
 }
 
 section {
- padding: 20px;
+    padding: 20px;
 }
+
 footer {
- background: #333;
- color: white;
- text-align: center;
- padding: 10px;
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
