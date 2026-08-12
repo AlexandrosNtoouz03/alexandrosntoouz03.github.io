@@ -2,27 +2,51 @@ body {
  font-family: Arial, sans-serif;
  margin: 0;
 }
-nav {
-    background: #333;
-    padding: 15px 20px; /* Slightly thicker padding looks better on full-width navs */
-    text-transform: uppercase;
-    /* Removed text-align: center because Flexbox will handle the alignment now */
+
+/* 1. Main Navigation Container */
+.navbar {
+    display: flex;
+    align-items: center;         /* Vertically centers the logo and the text */
+    justify-content: flex-start; /* Aligns all items to the left side */
+    background-color: #121212;   /* The dark background color */
+    padding: 15px 30px;          /* Adds space around the edges of the nav bar */
+    font-family: Arial, sans-serif;
 }
 
-.inline-list {
-    display: flex;                      /* Turns on Flexbox */
-    justify-content: space-evenly;      /* Spreads the items evenly across the full width */
+/* 2. Logo Spacing */
+.logo-container {
+    margin-right: 40px;          /* Creates the larger gap between the logo and "Home" */
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 35px;                /* Adjust this value based on your actual logo size */
+    display: block;
+}
+
+/* 3. Link List Container */
+.nav-links {
+    display: flex;
+    gap: 30px;                   /* Creates the even spacing between Home, Feed, and Library */
     list-style: none;
-    margin: 20px 5px;                          /* Adds some vertical margin for spacing */
-    padding: 10px 0;                       /* Adds some vertical padding for better clickability */
-    width: 100%;                        /* Ensures the list stretches across the whole nav */
+    margin: 0;
+    padding: 0;
 }
 
-nav a {
-    color: white;
+/* 4. Text Link Styling */
+.nav-links a {
+    color: #b3b3b3;              /* The muted light grey text color */
     text-decoration: none;
-    padding: 10px; 
+    font-size: 16px;
+    font-weight: 700;            /* Makes the font thick/bold */
 }
+
+/* Optional: Add a hover effect so the text turns bright white when hovered */
+.nav-links a:hover {
+    color: #ffffff;
+}
+
 section {
  padding: 20px;
 }
