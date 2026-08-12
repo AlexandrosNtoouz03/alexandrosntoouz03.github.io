@@ -8,10 +8,21 @@ nav {
  text-align: center;
  text-transform: uppercase;
 }
+
+.inline-list {
+     display: inline-block;
+
+}
+.inline-list li {
+    display: inline-block;   /* Places items side-by-side */
+    margin-right: 20px;      /* Adds space to the right of each item */
+}
+
 nav a {
  color: white;
  margin: 0 10px;
  text-decoration: none;
+ padding: 10px 20px;
 }
 section {
  padding: 20px;
