@@ -1,12 +1,14 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
+    text-align: center;
 }
 
 /* Styles the main navigation bar container */
 nav {
     background-color: #121212;
     padding: 15px 30px;
+    text-align: center;
 }
 
 /* Turns your list into a horizontal flex container */
