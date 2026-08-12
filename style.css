@@ -5,6 +5,8 @@ body {
 nav {
  background: #333;
  padding: 10px;
+ text-align: center;
+ text-transform: uppercase;
 }
 nav a {
  color: white;
