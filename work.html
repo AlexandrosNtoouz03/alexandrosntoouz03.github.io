@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <title>Projects</title>
-<link rel="stylesheet" href="style.css">
+    <title>Projects</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -17,49 +17,95 @@
         </ul>
     </nav>
 
+    <h1>Recent Projects</h1>
+    <section id="projects">
+        <h2>University Projects</h2>
+        
+        <div class="project-grid">
+            <!-- Legal NLP Project -->
+            <div class="project-card">
+                <h3>Automated Legal Clause Classification & Summarization</h3>
+                <p><strong>NLP, Python, Transformers</strong></p>
+                <ul>
+                    <li>Evaluated LegalBERT against general-purpose BERT on the CUAD dataset for clause classification.</li>
+                    <li>Compared sliding-window BART and Longformer Encoder-Decoder (LED) models for summarizing lengthy EU directives.</li>
+                </ul>
+            </div>
 
-<h1>Recent Projects</h1>
-<section id="projects">
-    <h2>University Projects</h2>
-    <div class="Legal Clause Classification">
-        <p><strong>Automated Legal Clause Classification (NLP & Python)</strong></p>
-        <ol>
-            <li>Developed a Natural Language Processing (NLP) model to automatically classify legal clauses into predefined categories, enhancing document analysis efficiency.</li>
-            <li>Implemented a Python-based pipeline for data preprocessing, feature extraction, and model training, achieving high accuracy in clause classification tasks.</li>
-        </ol>
-    </div>
-    <div class="Data Analysis & Clustering Pipeline">
-        <p><strong>Data Analysis & Clustering Pipeline (Python)</strong></p>
-        <ol>
-            <li>Engineered a Python-based data pipeline for comprehensive data cleaning, preprocessing, and exploratory analysis of complex datasets.</li>
-            <li>Implemented clustering algorithms to identify patterns and group similar data points, providing actionable insights for decision-making.</li>
-        </ol>
-    </div>
-    <div class="Human-Robot Interaction & Communication Analysis">
-        <p><strong>Human-Robot Interaction & Communication Analysis (NLP & Python)</strong></p>
-        <ol>
-            <li>Analyzed video recordings of students interacting with educational modular robots to extract and synchronize data on human communication and robot movement.</li>
-            <li>Applied Natural Language Processing (NLP) and sound processing techniques to algorithmically detect and categorize student collaborative strategies.</li>
-        </ol>
-    </div>
-    <div class="Space Mission Physics Engine">
-        <p><strong>Space Mission Physics Engine (Java)</strong></p>
-        <ol>
-            <li>Developed a custom physics engine to simulate celestial body mechanics and spacecraft trajectories using Newton’s laws of universal gravity</li>
-            <li> Implemented and benchmarked multiple numerical differential equation solvers, including Euler and 4th-order Runge-Kutta methods, to ensure simulation accuracy</li>
-            <li>Optimized spacecraft trajectory and fuel consumption using gradient descent algorithms and designed both open-loop and feedback controllers for landing simulations under stochastic wind conditions.</li>
-        </ol>
-    </div>
-</section>
+            <!-- EDMO Robot Project -->
+            <div class="project-card">
+                <h3>Human-Robot Interaction & Communication Analysis</h3>
+                <p><strong>NLP, Python, Machine Learning</strong></p>
+                <ul>
+                    <li>Extracted multimodal interaction features, including NLP sentiment metrics and acoustic prosody, from audio and video recordings.</li>
+                    <li>Applied fuzzy-c-means clustering to identify communication strategies and correlated them with robot speed tracked via ArUco markers.</li>
+                </ul>
+            </div>
 
-<section id="personal-projects">
-    <h2>Personal Projects</h2>
-    <p>INSERT PERSONAL PROJECT DETAILS HERE</p>
-</section>
+            <!-- Space Mission Project -->
+            <div class="project-card">
+                <h3>Titan Space Odyssey Physics Engine</h3>
+                <p><strong>Java, Physics Simulation</strong></p>
+                <ul>
+                    <li>Developed a Java physics engine to simulate a spacecraft's journey to Titan utilizing Newton's law of universal gravity.</li>
+                    <li>Implemented 4th-order Runge-Kutta and Adams-Moulton numerical solvers, alongside a hill climbing algorithm for fuel optimization.</li>
+                </ul>
+            </div>
 
-<footer>
-    <p>&copy; 2026 Alexandros Ntoouz. Built with custom code.</p>
-</footer>
+            <!-- Frisian Draughts Project -->
+            <div class="project-card">
+                <h3>Frisian Draughts AI Agent</h3>
+                <p><strong>Java, Reinforcement Learning</strong></p>
+                <ul>
+                    <li>Built a Frisian Draughts game in Java featuring Monte Carlo Tree Search (MCTS) and Deep Q-Learning (DQL) artificial intelligence agents.</li>
+                    <li>Designed a hybrid agent that leverages MCTS for simulation-based exploration and DQL for adaptive reinforcement learning.</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Large-Scale Food Delivery App Project -->
+        <div class="project-card">
+            <h3>Large-Scale Food Delivery Platform</h3>
+            <p><strong>Spring Boot, PostgreSQL, Terraform, RESTful APIs</strong></p>
+            <ul>
+                <li>Developed a scalable, end-to-end food delivery application facilitating customer orders, restaurant processing, and delivery execution.</li>
+                <li>Architected the system for horizontal and vertical scalability utilizing stateless Spring Boot, HikariCP connection pooling, and infrastructure-as-code via Terraform.</li>
+                <li>Implemented comprehensive Role-Based Access Control (RBAC) supporting Admins, Restaurant Owners, Delivery Partners, and Users, integrated with GitLab OAuth2 for Single Sign-On.</li>
+            </ul>
+        </div>
+        
+        <!-- Hindi-MNIST Digit Recognition Project -->
+        <div class="project-card">
+            <h3>Hindi-MNIST Digit Recognition</h3>
+            <p><strong>Computer Vision, CNNs, OpenCV</strong></p>
+            <ul>
+                <li>Engineered a compact Convolutional Neural Network (CNN) to accurately classify Hindi-MNIST digits.</li>
+                <li>Developed a robust image pre-processing pipeline using OpenCV, applying Non-Local Means denoising and Adaptive Gaussian Thresholding to normalize and binarize inputs.</li>
+                <li>Optimized model training utilizing the Adam optimizer alongside Cosine Annealing and Stochastic Weight Averaging (SWA) to improve generalization.</li>
+            </ul>
+        </div>
+
+    </section>
+
+    <section id="personal-projects">
+        <h2>Personal Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>This Website</h3>
+                <p><strong>HTML, CSS, JavaScript</strong></p>
+                <ul>
+                    <li>A responsive website built with HTML, CSS, and JavaScript to showcase my academic and personal work.</li>
+                    <li>Designed using modern layouts to improve my web development skills and host my digital CV.</li>
+                </ul>
+            </div>
+        </div>
+        
+    </section>
+
+    
+
+    <footer>
+        <p>&copy; 2026 Alexandros Ntoouz. Built with custom code.</p>
+    </footer>
 
 </body>
 </html>

@@ -74,7 +74,7 @@ footer {
 
 /* Controls the Photo Side */
 .overview-photo {
-    width: 100px; /* You can make this number bigger or smaller to change the photo size */
+    width: 200px; /* You can make this number bigger or smaller to change the photo size */
     flex-shrink: 0; /* Prevents the photo from getting squished by the text */
 }
 
@@ -161,8 +161,13 @@ footer {
 #contact-info {
     background-color: #f4f4f4;
     padding: 40px;
-    text-align: left;
-
+    
+    /* This is the magic that puts them side-by-side */
+    display: flex; 
+    align-items: center; /* Centers everything vertically */
+    justify-content: space-between; /* Pushes the text to the left and photo to the right */
+    gap: 40px; /* Adds a nice gap between the text and the photo */
+    
     /* Location on the page */
     width: 90%;
     margin-left: auto;
@@ -175,11 +180,35 @@ footer {
     font-size: 16px;
     color: #333;
 }
+.email img {
+    width: 100px;
+    height: auto;
+    margin-bottom: auto;
+}
+
 .linkedin {
     display:flex;
     flex-direction: row;
     font-size: 16px;
     color: #333;
+}
+
+.linkedin img {
+    width: 200px;
+    height: auto;
+    margin-left: auto;
+}
+.github{
+    display:flex;
+    flex-direction: row;
+    font-size: 16px;
+    color: #333;  
+}
+
+.github img{
+    width: 200px;
+    height: auto;
+    margin-left: auto;
 }
 
 #collection1 {
@@ -205,4 +234,43 @@ footer {
     width: 90%;
     height: 200px;
     border-radius: 10px; /* Optional: Adds slightly rounded corners to the images */
+}
+
+#skills {
+    background-color: #f4f4f4;
+    padding: 40px;
+    text-align: left;
+
+    /* Location on the page */
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+
+#project-highlights {
+    background-color: #f4f4f4;
+    padding: 40px;
+    text-align: left;
+
+    /* Location on the page */
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+
+#personal-compositions {
+    background-color: #f4f4f4;
+    padding: 40px;
+    text-align: left;
+
+    /* Location on the page */
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+.composition {
+    margin-bottom: 20px;
 }
